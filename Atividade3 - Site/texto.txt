@@ -1,0 +1,72 @@
+APIs e Integrações - Conceitos, Tipos, Ferramentas e Exemplos
+
+Introdução:
+	A necessidade de conexão de sistemas heterogêneos impulsionou a adoção de APIs (Application Programming Interfaces) como elementos estruturais no desenvolvimento de um software. Uma API é uma camada intermediária de comunicação que estabelece um contrato bem definido, especificando regras, formatos e procedimentos para que sistemas distintos troquem informações de forma contínua, segura e padronizada.
+Dessa forma, diferentes componentes do software podem interagir e funcionar sem a necessidade de acessar diretamente a implementação ou o código interno uns dos outros, promovendo a modularização de sistemas, que é a divisão de um sistema complexo em partes menores chamadas de módulos.
+
+Vantagens da implementação de APIs:
+	Agilidade e Inovação: Permitem a implementação rápida de novos recursos e a adaptação ágil às mudanças de mercado.
+	Aumento de Produtividade: Aceleram consideravelmente o desenvolvimento de aplicativos, minimizando em até 75% o tempo gasto na finalização de projetos.
+	Eficiência Operacional e Redução de Custos: Simplificam a integração de processos internos e externos, padronizando formatos de intercâmbio de informações e diminuindo tarefas manuais.
+	Expansão de Mercado: Abrem portas para novos modelos de negócios, criando ecossistemas de aplicações desenvolvidas por parceiros e desenvolvedores externos.
+
+Conceitos Fundamentais:
+	Modelo de Requisição de Resposta (Request-Response): A comunicação em uma interface web entre um cliente e um servidor é feita através de requisições (Requests) contendo os parâmetros e dados de que se necessita e o servidor processa a solicitação com base em regras internas e devolve uma resposta (Response) estruturada.
+Protocolo HTTP / HTTPS (HyperText Transfer Protocol Secure): A transferência e transporte de informações pela web ocorrem de forma predominante por meio deste protocolo, que, em conjunto com o modelo TCP / IP, fazem com que as mensagens sejam padronizadas no formato ASCII em mensagens de requisição e mensagens de resposta. As mensagens de requisição são compostas por uma linha de requisição e por linhas de cabeçalho, enquanto as mensagens de resposta contém linhas de estado, linhas de cabeçalho e o corpo da entidade.
+Métodos HTTP: 
+GET: Utilizado estritamente para buscar ou consultar dados de um recurso.
+POST: Empregado para enviar novos dados e criar recursos subordinados.
+PUT: Destinado a atualizar por completo um recurso existente ou criá-lo caso o identificador completo ainda não exista.
+PATCH: Usado para atualizações parciais de um registro, modificando apenas campos pontuais.
+DELETE: Responsável por apagar ou remover o recurso especificado no servidor.
+	Códigos de Resposta HTTP:
+100-199: Informativos, indicando que a requisição foi recebida.
+200-299: Sucesso, operação completada com êxito.
+300-399: Redirecionamento, informam que o recurso solicitado foi movido.
+400-499: Erros do Cliente, indicam falhas causadas por parte de quem fez a requisição.
+500-599: Erros do Servidor, indicam problemas internos no processamento da requisição.
+	
+Estilo Arquitetural REST: 
+Desenvolvido por Roy Fielding, o REST (REpresentational State Transfer) é um conjunto de restrições e práticas de engenharia de software para projetar interfaces com alta escalabilidade e eficiência semântica na web.
+Cliente-Servidor (Client-Server): Separa a interface do usuário (lado cliente) do armazenamento e processamento de dados (lado servidor).
+
+
+Interface Uniforme (Uniform Interface): Forma única de comunicação baseada em quatro princípios básicos, identificação dos recursos por URIs (Uniform Resource Identifier), representações de recursos, mensagens autodescritivas e componente HATEOAS (Hypermedia As The Engine Of Application State).
+Sem Estado (Stateless): Cada requisição do cliente deve conter todas as informações necessárias para ser interpretada e processada.
+	Armazenamento de Cache: Os recursos devem ser explicitamente definidos como cacheáveis ou não, permitindo que requisições idênticas sejam respondidas diretamente pela memória cache local.
+
+REST Puro (Pure REST) e REST Pragmático (Pragmatic REST):
+	Pure REST: Aplicação de HATEOAS para as respostas do servidor fornecerem dinamicamente os links de hipertexto com as próximas ações possíveis.
+	Pragmatic REST: Mais adotada pelo mercado e por grandes corporações e foca no uso do HTTP como transporte no formato JSON (JavaScript Object Notation) para as mensagens em rotas fixas previamente documentadas, solução mais rápida e de fácil manutenção.
+
+Mecanismos de Autenticação e Autorização:
+	Basic Authentication: O cliente envia o nome de usuário e a senha criptografados à base64.
+	API Keys: O provedor gera uma chave de acesso alfanumérica única.
+	OAuth 2.0 e JWT (JSON Web Tokens): O modelo mais robusto de alta segurança. Esse framework atua gerando credenciais próprias por meio de servidores de autorização. Ele emite um token criptográfico JWT permitindo a validação direta de permissões de usuário sem expor dados confidenciais.
+
+Ferramentas e Tecnologias Comuns:
+	Linguagens e Frameworks:
+Ambiente Java: Java JDK / JRE.
+Ambiente Python: Falcon, Flask, FastAPI, Django, SQLAlchemy
+
+
+Exemplos:
+-	API de Gestão de Veículos e Multas (Java / Jersey).
+-	API dos Correios (CEP e Agências).
+-	Integração de Ingressos e Pagamento Financeiro (Asaas).
+-	Meteorológica (Python / Falcon).
+
+Conclusão:
+	As APIs e os processos e integração de sistemas consolidaram-se como pilares centrais da engenharia de software e da otimização operacional corporativa. Quando as APIs são projetadas sob princípios semânticos bem definidos, como as da arquitetura REST, a simplicidade do formato JSON e os mecanismos consistentes de segurança (OAuth e JWT), os sistemas integrados ganham flexibilidade para evoluir sem provocar muitos retrabalhos no código original.
+
+
+Referências:
+-	GONÇALVES, Vitor Tavares. Introdução à Criação de APIs: Conceitos Fundamentais e Implementação em Linguagem Python. 2025. Trabalho de Conclusão de Curso (Engenharia de Controle e Automação) – Escola de Minas, Universidade Federal de Ouro Preto, Ouro Preto, 2025. 
+
+-	ARAÚJO, Kaio Sousa. Integração de APIs Bancárias em Sistemas Financeiros: Desafios e Boas Práticas. 2026. Trabalho de Conclusão de Curso (Bacharelado em Ciência da Computação) – Campus de Russas, Universidade Federal do Ceará, Russas, 2026. 
+
+-	CAMPOS, Marcos Vinícius Souza. Desenvolvimento de APIs baseadas em REST para integração e construção de aplicações. 2013. Trabalho de Conclusão de Curso (Bacharelado em Análise de Sistemas e Tecnologia da Informação) – Faculdade de Tecnologia de Americana, Americana, SP, 2013. 
+
+-	FELTRIN, Larissa. APIs REST: O impacto das APIs REST na evolução digital das empresas. 2023. Trabalho de Conclusão de Curso (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia de Americana "Ministro Ralph Biasi", Americana, SP, 2023. 
+
+-	GONZÁLEZ, Gregorio Sebastián Gualavisi; ZURITA, Edwin Rodrigo Ramos; BENTACOURT, Fernando Alexander Ortiz; GONZÁLEZ, María Isabel Gualavisi. Development of REST and GraphQL APIs. Journal of Software Engineering and Computing.

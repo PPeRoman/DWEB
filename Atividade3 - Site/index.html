@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Roman Gomes">
+    <meta name="description" content="Site sobre APIs e Integrações abordando conceitos, tipos, ferramentas e exemplos">
+    <meta name="keywords" content="API, Integração, Conceitos, Tipos, Ferramentas, Exemplos">
+    <title>APIs e Integrações</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#introduction">Introdução</a>
+                <a href="#advantages">Vantagens</a>
+                <a href="#concepts">Conceitos</a>
+                <a href="#methods">Métodos</a>
+                <a href="#styles">Estilo</a>
+                <a href="#types">Tipos</a>
+                <a href="#tools">Ferramentas</a>
+                <a href="#examples">Exemplos</a>
+                <a href="#conclusion">Conclusão</a>
+                <a href="#reference">Referências Bibliográficas</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>APIs e Integrações - Conceitos, Tipos, Ferramentas e Exemplos</h1>
+
+        <section class="introduction" id="introduction">
+            <h2 class="title introduction-title">Introdução:</h2>
+
+            <div class="container introduction-container">
+                <p>
+                        A necessidade de conexão de sistemas heterogêneos impulsionou a adoção de APIs (Application Programming Interfaces) como elementos estruturais no desenvolvimento de um software. Uma API é uma camada intermediária de comunicação que estabelece um contrato bem definido, especificando regras, formatos e procedimentos para que sistemas distintos troquem informações de forma contínua, segura e padronizada.
+                </p>
+
+                <p>
+                        Dessa forma, diferentes componentes do software podem interagir e funcionar sem a necessidade de acessar diretamente a implementação ou o código interno uns dos outros, promovendo a modularização de sistemas, que é a divisão de um sistema complexo em partes menores chamadas de módulos.
+                </p>
+            </div>
+        </section>
+
+        <section class="advantages" id="advantages">
+            <h2 class="title advantages-title">Vantagens da implementação de APIs:</h2>
+            
+            <div class="container advantages-container">
+                <p>
+                    <strong>Agilidade e Inovação:</strong> Permitem a implementação rápida de novos recursos e a adaptação ágil às mudanças de mercado.
+                </p>
+
+                <p>
+                    <strong>Aumento de Produtividade:</strong> Aceleram consideravelmente o desenvolvimento de aplicativos, minimizando em até 75% o tempo gasto na finalização de projetos.
+                </p>
+
+                <p>
+                    <strong>Eficiência Operacional e Redução de Custos:</strong> Simplificam a integração de processos internos e externos, padronizando formatos de intercâmbio de informações e diminuindo tarefas manuais.
+                </p>
+
+                <p>
+                    <strong>Expansão de Mercado:</strong> Abrem portas para novos modelos de negócios, criando ecossistemas de aplicações desenvolvidas por parceiros e desenvolvedores externos.
+                </p>
+            </div>
+        </section>
+
+        <section class="concepts" id="concepts">
+            <h2 class="title concepts-title">Conceitos Fundamentais:</h2>
+
+            <div class="container concepts-container">
+                <p>
+                    <strong>Modelo de Requisição de Resposta (Request-Response):</strong> A comunicação em uma interface web entre um cliente e um servidor é feita através de requisições (Requests) contendo os parâmetros e dados de que se necessita e o servidor processa a solicitação com base em regras internas e devolve uma resposta (Response) estruturada.
+                </p>
+
+                <p>
+                    <strong>Protocolo HTTP / HTTPS (HyperText Transfer Protocol Secure):</strong> A transferência e transporte de informações pela web ocorrem de forma predominante por meio deste protocolo, que, em conjunto com o modelo TCP / IP, fazem com que as mensagens sejam padronizadas no formato ASCII em mensagens de requisição e mensagens de resposta. As mensagens de requisição são compostas por uma linha de requisição e por linhas de cabeçalho, enquanto as mensagens de resposta contém linhas de estado, linhas de cabeçalho e o corpo da entidade.
+                </p>
+            </div>
+        </section>
+
+        <section class="methods" id="methods">
+            <h2 class="title methods-title">Métodos HTTP: </h2>
+
+            <div class="container methods-container">
+                <p>
+                    <strong>GET:</strong> Utilizado estritamente para buscar ou consultar dados de um recurso.
+                </p>
+
+                <p>
+                    <strong>POST:</strong> Empregado para enviar novos dados e criar recursos subordinados.
+                </p>
+
+                <p>
+                    <strong>PUT:</strong> Destinado a atualizar por completo um recurso existente ou criá-lo caso o identificador completo ainda não exista.
+                </p>
+
+                <p>
+                    <strong>PATCH:</strong> Usado para atualizações parciais de um registro, modificando apenas campos pontuais.
+                </p>
+
+                <p>
+                    <strong>DELETE:</strong> Responsável por apagar ou remover o recurso especificado no servidor.
+                </p>
+            </div>
+        </section>        
+
+        <section class="codes">
+            <h2 class="title codes-title">Códigos de Resposta HTTP:</h2>
+
+            <div class="container codes-container">
+                <p>
+                    <strong>100-199:</strong> Informativos, indicando que a requisição foi recebida.
+                </p>
+
+                <p>
+                    <strong>200-299:</strong> Sucesso, operação completada com êxito.
+                </p>
+
+                <p>
+                    <strong>300-399:</strong> Redirecionamento, informam que o recurso solicitado foi movido.
+                </p>
+
+                <p>
+                    <strong>400-499:</strong> Erros do Cliente, indicam falhas causadas por parte de quem fez a requisição.
+                </p>
+
+                <p>
+                    <strong>500-599:</strong> Erros do Servidor, indicam problemas internos no processamento da requisição.
+                </p>
+            </div>
+        </section>
+        
+        <section class="styles" id="styles">
+            <h2 class="title styles-title">Estilo Arquitetural REST:</h2>
+
+            <div class="container styles-container">
+                <p>
+                    Desenvolvido por Roy Fielding, o REST (REpresentational State Transfer) é um conjunto de restrições e práticas de engenharia de software para projetar interfaces com alta escalabilidade e eficiência semântica na web.
+                </p>
+
+                <p>
+                    <strong>Cliente-Servidor (Client-Server):</strong> Separa a interface do usuário (lado cliente) do armazenamento e processamento de dados (lado servidor).
+                </p>
+
+                <p>
+                    <strong>Interface Uniforme (Uniform Interface):</strong> Forma única de comunicação baseada em quatro princípios básicos, identificação dos recursos por URIs (Uniform Resource Identifier), representações de recursos, mensagens autodescritivas e componente HATEOAS (Hypermedia As The Engine Of Application State).
+                </p>
+
+                <p>
+                    <strong>Sem Estado (Stateless):</strong> Cada requisição do cliente deve conter todas as informações necessárias para ser interpretada e processada.
+                </p>
+
+                <p>
+                    <strong>Armazenamento de Cache:</strong> Os recursos devem ser explicitamente definidos como cacheáveis ou não, permitindo que requisições idênticas sejam respondidas diretamente pela memória cache local.
+                </p>
+            </div>
+        </section>
+
+        <section class="types" id="types">
+            <h2 class="title types-title">REST Puro (Pure REST) e REST Pragmático (Pragmatic REST):</h2>
+
+            <div class="container types-container">
+                <p>
+                    <strong>Pure REST:</strong> Aplicação de HATEOAS para as respostas do servidor fornecerem dinamicamente os links de hipertexto com as próximas ações possíveis.
+                </p>
+
+                <p>
+                    <strong>Pragmatic REST:</strong> Mais adotada pelo mercado e por grandes corporações e foca no uso do HTTP como transporte no formato JSON (JavaScript Object Notation) para as mensagens em rotas fixas previamente documentadas, solução mais rápida e de fácil manutenção.
+                </p>
+            </div>
+        </section>
+
+        <section class="mechanism">
+            <h2 class="title mechanism-title">Mecanismos de Autenticação e Autorização:</h2>
+
+            <div class="container mechanism-container">
+                <p>
+                    <strong>Basic Authentication:</strong> O cliente envia o nome de usuário e a senha criptografados à base64.
+                </p>
+
+                <p>
+                    <strong>API Keys:</strong> O provedor gera uma chave de acesso alfanumérica única.
+                </p>
+
+                <p>
+                    <strong>OAuth 2.0 e JWT (JSON Web Tokens):</strong> O modelo mais robusto de alta segurança. Esse framework atua gerando credenciais próprias por meio de servidores de autorização. Ele emite um token criptográfico JWT permitindo a validação direta de permissões de usuário sem expor dados confidenciais.
+                </p>
+            </div>
+        </section>
+
+        <section class="tools" id="tools">
+            <h2 class="title tools-title">Ferramentas e Tecnologias Comuns:</h2>
+            <h3 class="subtitle tools-subtitle">Linguagens e Frameworks:</h3>
+
+            <div class="container tools-container">
+                <p>
+                    <strong>Ambiente Java:</strong> Java JDK / JRE.
+                </p>
+
+                <p>
+                    <strong>Ambiente Python:</strong> Falcon, Flask, FastAPI, Django, SQLAlchemy
+                </p>
+            </div>
+        </section>
+
+        <section class="examples" id="examples">
+            <h2 class="title examples-title">Exemplos:</h2>
+
+            <div class="container examples-container">
+                <ul>
+                    <li>API de Gestão de Veículos e Multas (Java / Jersey).</li>
+
+                    <li>API dos Correios (CEP e Agências).</li>
+
+                    <li>Integração de Ingressos e Pagamento Financeiro (Asaas).</li>
+
+                    <li>Meteorológica (Python / Falcon).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="conclusion" id="conclusion">
+            <h2 class="title conclusion-title">Conclusão:</h2>
+
+            <div class="container conclusion-container">
+                <p>
+                    As APIs e os processos e integração de sistemas consolidaram-se como pilares centrais da engenharia de software e da otimização operacional corporativa. Quando as APIs são projetadas sob princípios semânticos bem definidos, como as da arquitetura REST, a simplicidade do formato JSON e os mecanismos consistentes de segurança (OAuth e JWT), os sistemas integrados ganham flexibilidade para evoluir sem provocar muitos retrabalhos no código original.
+                </p>
+            </div>
+        </section>
+
+        <section class="reference" id="reference">
+            <h2 class="title reference-title">Referências:</h2>
+
+            <div class="container reference-container">
+                <ul>
+                    <li>GONÇALVES, Vitor Tavares. Introdução à Criação de APIs: Conceitos Fundamentais e Implementação em Linguagem Python. 2025. Trabalho de Conclusão de Curso (Engenharia de Controle e Automação) – Escola de Minas, Universidade Federal de Ouro Preto, Ouro Preto, 2025.</li>
+
+                    <li>ARAÚJO, Kaio Sousa. Integração de APIs Bancárias em Sistemas Financeiros: Desafios e Boas Práticas. 2026. Trabalho de Conclusão de Curso (Bacharelado em Ciência da Computação) – Campus de Russas, Universidade Federal do Ceará, Russas, 2026.</li>
+
+                    <li>CAMPOS, Marcos Vinícius Souza. Desenvolvimento de APIs baseadas em REST para integração e construção de aplicações. 2013. Trabalho de Conclusão de Curso (Bacharelado em Análise de Sistemas e Tecnologia da Informação) – Faculdade de Tecnologia de Americana, Americana, SP, 2013.</li>
+
+                    <li>FELTRIN, Larissa. APIs REST: O impacto das APIs REST na evolução digital das empresas. 2023. Trabalho de Conclusão de Curso (Tecnologia em Análise e Desenvolvimento de Sistemas) – Faculdade de Tecnologia de Americana "Ministro Ralph Biasi", Americana, SP, 2023.</li>
+
+                    <li>GONZÁLEZ, Gregorio Sebastián Gualavisi; ZURITA, Edwin Rodrigo Ramos; BENTACOURT, Fernando Alexander Ortiz; GONZÁLEZ, María Isabel Gualavisi. Development of REST and GraphQL APIs. Journal of Software Engineering and Computing.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
