@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: aliceblue;
+    --cor1: hsl(221, 42%, 43%);
+    --cor2: #187b8d7c;
+    --cor3: rgba(125, 6, 6, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.card {
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px var(--cor3), 4px 4px 5px 0px var(--cor2);
+}
+
+.card p {
+    margin-top: 10px 0;
+}
+
+button {
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px white;
+}
