@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-:root {
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,19 +23,72 @@ body {
     line-height: 1.6;
 }
 
+header {
+    background-color: rgb(85, 74, 50);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-right: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.nav-logo a {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-logo:hover {
+    background-color: rgb(122, 107, 73);
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.link {
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: rgb(122, 107, 73);
+}
+
 main {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    text-align: justify;
+    padding: 0 30px;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2em;
+    text-align: left;
+    margin-top: 100px;
 }
 
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
+    text-align: left;
     margin-top: -5px;
     color: rgb(66, 66, 66);
 }
@@ -49,6 +98,106 @@ img {
     margin-bottom: 20px;
 }
 
+.img-1 {
+    display: block;
+    border: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.informations-text h3 {
+    font-size: 20px;
+}
+
 .informations-text p {
     margin-bottom: 30px;
+}
+
+.more {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.more-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.more-information p {
+    margin-top: -10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 0 0 20px;
+    flex: 1 1 260px;
+
+}
+
+.card img {
+    border: 2px solid black;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+.brazil-languages h3 {
+    margin-bottom: 30px;
+}
+
+.brazil-languages h4 {
+    margin: 10px 0 10px 0;
+}
+
+footer {
+    background-color: rgb(41, 36, 24);
+    color: white;
+    margin-top: 80px;
+}
+
+footer p {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

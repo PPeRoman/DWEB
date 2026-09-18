@@ -15,14 +15,26 @@
 <body>
     <header>
         <nav>
+            <div class="nav-logo">
+                <a href="#home">ROMANEWS</a>
+            </div>
 
+            <div class="nav-links">
+                <a href="#home" class="link">Home</a>
+                <a href="#table" class="link">Principais linguagens</a>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>As 5 linguagens de programação mais usadas no mundo, segundo o GitHub</h1>
+        <h1 id="home">As 5 linguagens de programação mais usadas no mundo, segundo o GitHub</h1>
         <h2>Ranking aponta o Brasil como uma das comunidades de desenvolvedores de software que mais cresce no mundo</h2>
 
-        <img src="imagens/programacao.jpg" alt="Imagem de algumas linhas de programação">
+        <picture>
+            <source media="(max-width: 360px)" srcset="imagens/programacao-185.jpg">
+            <source media="(max-width: 480px)" srcset="imagens/programacao-375.jpg">
+
+            <img src="imagens/programacao-750.jpg" alt="Imagem de algumas linhas de programação" class="img-1">
+        </picture>
 
         <section class="informations">
             <div class="informations-text">
@@ -34,23 +46,37 @@
                     Segundo o GitHub, embora o mercado sul-americano tenha contribuído com apenas 6% do número total de programadores em todo o mundo, em comparação com a América do Norte e Ásia que, juntas, tiveram 60% dos desenvolvedores de software contribuindo com código, esta região foi a que mais cresceu em comparação com o ano anterior. O Brasil, em particular, é uma das comunidades de desenvolvedores de software contribuindo com código, esta região foi a que mais cresceu em comparação com o ano anterior. O Brasil, em particular, é uma das comunidades de desenvolvedores de software que mais cresce no mundo, com um crescimento anual de 40% no total de usuários.
                 </p>
 
-                <div class="more-information">
+                <div class="more">
                     <h3>Veja também</h3>
 
-                    <p>
-                        Cheque de R$ 400 milhões e aquisições no forno: os planos da Canopy para consolidar software
-                    </p>
+                    <div class="more-information">
+                        <div class="card">
+                            <a href="#" class="card-links"><img src="imagens/thiago-rocha-canopy.jpg" alt="Imagem de Thiago Rocha que lidera a empresa Canopy"></a>
 
-                    <p>
-                        Depois de vender R$ 50 bilhões, gigante Hotmart lança IA para criar apps sem precisar programar
-                    </p>
+                            <p>
+                                Cheque de R$ 400 milhões e aquisições no forno: os planos da Canopy para consolidar software
+                            </p>
+                        </div>
 
-                    <p>
-                        Por que o próximo software de gestão vai deixar de ser espelho
-                    </p>
+                        <div class="card">
+                            <a href="#" class="card-links"><img src="imagens/joao-resende-hotmart.jpg" alt="Imagem de João Pedro Resende, CEO da Hotmart"></a>
+                    
+                            <p>
+                                Depois de vender R$ 50 bilhões, gigante Hotmart lança IA para criar apps sem precisar programar
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <a href="#" class="card-links"><img src="imagens/gestao.jpg" alt="Imagem exemplo sobre aplicativos de gestão"></a>
+
+                            <p>
+                                Por que o próximo software de gestão vai deixar de ser espelho
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <p>
+                <p id="table">
                     No país as linguagens que mais crescem ano a ano, classificadas em ordem, foram: Javascript, Sass CSS, Blade, Linguagem de configuração HashiCorp, Elixir, Typescript, Kotlin, Go, Lua e Python. A popularidade de Javascript e Sass CSS no Brasil foi semelhante ao crescimento de ambas as linguagens globalmente, enquanto o aumento do uso da Blade e da linguagem de configuração Hashicorp foi mais específico para o Brasil.
                 </p>
             </div>
@@ -96,40 +122,50 @@
         <section class="brazil-languages">
             <h3>Confira quais são as tendências e o que elas significam para o mercado nacional:</h3>
 
-            <h4>#1 - Javascript</h4>
+            <div class="languages">
+                <h4>#1 - Javascript</h4>
 
-            <p>
-                JavaScript é uma linguagem de programação universal, multiplataforma e segue sendo a linguagem mais popular no mundo inteiro nos últimos sete anos. A universalidade do JavaScript a torna especialmente procurada para aplicativos de machine learning e inteligência artificial. Ela também permite um tempo de desenvolvimento rápido, fornecendo um loop interativo para facilitar a depuração em uma estrutura de desenvolvimento sólida.
-            </p>
+                <p>
+                    <strong>JavaScript</strong> é uma <strong>linguagem de programação universal</strong>, multiplataforma e segue sendo a <strong>linguagem mais popular no mundo inteiro nos últimos sete anos.</strong> A universalidade do JavaScript a torna especialmente procurada para aplicativos de machine learning e inteligência artificial. Ela também permite um tempo de desenvolvimento rápido, fornecendo um loop interativo para facilitar a depuração em uma estrutura de desenvolvimento sólida.
+                </p>
+            </div>
 
-            <h4>#2 - Sass CSS</h4>
+            <div class="languages">
+                <h4>#2 - Sass CSS</h4>
 
-            <p>
-                Uma linguagem de extensão do CSS, a Syntactically Awesome Style Sheets (SASS), em tradução livre “folhas de estilo com uma sintaxe incrível”, tem ganhado popularidade desde a sua criação em 2006. A SASS visa tornar o processo de desenvolvimento mais simples e mais eficiente, mantendo a mesma lógica do CSS (seletores, regras etc), mas de uma maneira mais organizada, intuitiva e com trechos de código facilmente reutilizáveis.
-            </p>
+                <p>
+                    Uma linguagem de <strong>extensão do CSS</strong>, a <strong>Syntactically Awesome Style Sheets (SASS)</strong>, em tradução livre “folhas de estilo com uma sintaxe incrível”, tem ganhado popularidade desde a sua criação em 2006. A SASS visa tornar o processo de desenvolvimento mais simples e mais eficiente, mantendo a mesma lógica do CSS (seletores, regras etc), mas de uma maneira mais organizada, intuitiva e com trechos de código facilmente reutilizáveis.
+                </p>
+            </div>
 
-            <h4>#3 - Blade</h4>
+            <div class="languages">
+                <h4>#3 - Blade</h4>
 
-            <p>
-                A terceira linguagem mais popular no Brasil é a Blade, conhecida por aumentar a produtividade, a velocidade de codificação e a facilidade de leitura do código. É uma linguagem que enfatiza o algoritmo, por isso tem um conjunto de sintaxe bem pequeno, mas poderoso. Por ser simples, rápida e dinâmica, permite desenvolver aplicações complexas rapidamente.
-            </p>
+                <p>
+                    A <strong>terceira linguagem mais popular no Brasil</strong> é a Blade, conhecida por aumentar a produtividade, a velocidade de codificação e a facilidade de leitura do código. É uma <strong>linguagem que enfatiza o algoritmo</strong>, por isso tem um <strong>conjunto de sintaxe bem pequeno, mas poderoso.</strong> Por ser simples, rápida e dinâmica, permite desenvolver aplicações complexas rapidamente.
+                </p>
+            </div>
 
-            <h4>#4 - HashiCorp Configuration Language (HCL)</h4>
+            <div class="languages">
+                <h4>#4 - HashiCorp Configuration Language (HCL)</h4>
 
-            <p>
-                A HashiCorp Configuration Language (HCL) é de configuração exclusiva, projetada para ser usada com ferramentas HashiCorp. Hoje, a HCL se expandiu e já é classificada como um kit de ferramentas para a criação de linguagens de programação estruturadas. Embora pretenda ser útil para finalidades gerais, e na criação de linguagens que sejam amigáveis tanto para pessoas quanto para máquinas, para uso com ferramentas de linha de comando, é voltada principalmente para ferramentas de desenvolvimento, servidores, etc.
-            </p>
+                <p>
+                    A <strong>HashiCorp Configuration Language (HCL)</strong> é de configuração exclusiva, projetada para ser usada com ferramentas HashiCorp. Hoje, a HCL se expandiu e já é classificada como um <strong>kit de ferramentas para a criação de linguagens de programação estruturadas.</strong> Embora pretenda ser útil para finalidades gerais, e na criação de linguagens que sejam amigáveis tanto para pessoas quanto para máquinas, para uso com ferramentas de linha de comando, é voltada principalmente para ferramentas de desenvolvimento, servidores, etc.
+                </p>
+            </div>
 
-            <h4>#5 - Elixir</h4>
+            <div class="languages">
+                <h4>#5 - Elixir</h4>
 
-            <p>
-                A Elixir surgiu em 2014 e é uma linguagem de programação brasileira que tem sido adotada por cada vez mais desenvolvedores ao redor do mundo. É uma linguagem de código aberto que é executada na Máquina Virtual Erlang (Erlang VM), cujo principal objetivo é oferecer uma programação produtiva para aplicações distribuídas seguras e de fácil manutenção, potencializando os recursos da máquina virtual sobre a qual está fundada sem custos de performance.
-            </p>
+                <p>
+                    A <strong>Elixir</strong> surgiu em 2014 e é uma <strong>linguagem de programação brasileira</strong> que tem sido adotada por cada vez mais desenvolvedores ao redor do mundo. É uma linguagem de código aberto que é executada na <strong>Máquina Virtual Erlang (Erlang VM)</strong>, cujo principal objetivo é oferecer uma programação produtiva para aplicações distribuídas seguras e de fácil manutenção, potencializando os recursos da máquina virtual sobre a qual está fundada sem custos de performance.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
         <p>
-            Criado por Pedro Roman como um projeto utilizando os conteúdos do site <a href="https://exame.com/tecnologia/as-5-linguagens-de-programacao-mais-usadas-no-mundo-segundo-o-github/" target="_blank" rel="no-follow">exame.com</a>
+            Criado por Pedro Roman como um projeto utilizando os conteúdos do site <strong><a href="https://exame.com/tecnologia/as-5-linguagens-de-programacao-mais-usadas-no-mundo-segundo-o-github/" target="_blank" rel="no-follow">exame.com</a></strong>
         </p>
 
         <p>
