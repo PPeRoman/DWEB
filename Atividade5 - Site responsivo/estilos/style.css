@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.caixa-responsiva {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+}
+
+@media (max-width: 420px) {
+    .caixa-responsiva { 
+        background-color: #2c3e50; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Cinza (Até 420px)"; 
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa-responsiva { 
+        background-color: #e67e22; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Laranja (421px - 768px)"; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa-responsiva { 
+        background-color: #9b59b6; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Lilás (769px - 1024px)"; 
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa-responsiva { 
+        background-color: #e07b7b; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Rosa (1025px - 1080px)"; 
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa-responsiva { 
+        background-color: #3498db; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Azul (1081px - 1366px)"; 
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa-responsiva { 
+        background-color: #f1c40f; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Amarelo (1367px - 1920px)"; 
+    }
+}
+
+@media (min-width: 1921px) {
+    .caixa-responsiva { 
+        background-color: #2ecc71; 
+    }
+    
+    .caixa-responsiva h2::after { 
+        content: "Verde (Maior que 1920px)"; 
+    }
+}
